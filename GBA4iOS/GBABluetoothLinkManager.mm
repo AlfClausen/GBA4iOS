@@ -317,7 +317,7 @@ NSString *const GBALinkLatencyTestCharacteristicUUID = @"E5C9177D-FE00-428E-BAC8
 
 - (void)centralManagerDidUpdateState:(CBCentralManager *)central
 {
-    if (central.state == CBManagerStatePoweredOn)
+    if (central.state == CBCentralManagerStatePoweredOn)
     {
         DLog(@"Starting Scan...");
         [self.centralManager scanForPeripheralsWithServices:@[[CBUUID UUIDWithString:GBALinkServiceUUID]] options:nil];
@@ -479,7 +479,7 @@ NSString *const GBALinkLatencyTestCharacteristicUUID = @"E5C9177D-FE00-428E-BAC8
 
 - (void)peripheralManagerDidUpdateState:(CBPeripheralManager *)peripheral
 {
-    if (peripheral.state == CBManagerStatePoweredOn)
+    if (peripheral.state == CBPeripheralManagerStatePoweredOn)
     {
         DLog(@"Adding service %@...", self.linkService);
         [self.peripheralManager addService:self.linkService];

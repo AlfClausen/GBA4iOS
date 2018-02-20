@@ -27,7 +27,7 @@
 #import "UIActionSheet+RSTAdditions.h"
 
 #import "SSZipArchive.h"
-#import <DropboxSDK/DropboxSDK.h>
+#import <ObjectiveDropboxOfficial/ObjectiveDropboxOfficial.h>
 
 #define LEGAL_NOTICE_ALERT_TAG 15
 #define NAME_ROM_ALERT_TAG 17
@@ -111,11 +111,7 @@ dispatch_queue_t directoryContentsChangedQueue() {
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(userRequestedToPlayROM:) name:GBAUserRequestedToPlayROMNotification object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardDidHide:) name:UIKeyboardDidHideNotification object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(settingsDidChange:) name:GBASettingsDidChangeNotification object:nil];
-        
-    } else {
-        return [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     }
-    
     return self;
 }
 
@@ -228,9 +224,7 @@ dispatch_queue_t directoryContentsChangedQueue() {
         
         if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
         {
-            UIInterfaceOrientation o = [[UIApplication sharedApplication] statusBarOrientation];
-            
-            if (UIInterfaceOrientationIsPortrait(o))
+            if (UIInterfaceOrientationIsPortrait(self.interfaceOrientation))
             {
                 frame.size.height = 29.0f;
             }
@@ -1079,7 +1073,7 @@ dispatch_queue_t directoryContentsChangedQueue() {
 
 - (void)startROM:(GBAROM *)rom showSameROMAlertIfNeeded:(BOOL)showSameROMAlertIfNeeded
 {
-    if ([[NSUserDefaults standardUserDefaults] boolForKey:GBASettingsDropboxSyncKey] && [[DBSession sharedSession] isLinked] && ![[GBASyncManager sharedManager] performedInitialSync])
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:GBASettingsDropboxSyncKey] && [DBClientsManager authorizedClient] != nil && ![[GBASyncManager sharedManager] performedInitialSync])
     {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Syncing with Dropbox", @"")
                                                         message:NSLocalizedString(@"Please wait for the initial sync to be complete, then launch the game. This is to ensure no save data is lost.", @"")
@@ -1090,7 +1084,7 @@ dispatch_queue_t directoryContentsChangedQueue() {
         return;
     }
     
-    if ([[NSUserDefaults standardUserDefaults] boolForKey:GBASettingsDropboxSyncKey] && [[DBSession sharedSession] isLinked] && [[GBASyncManager sharedManager] isSyncing] && [[GBASyncManager sharedManager] hasPendingDownloadForROM:rom] && ![rom syncingDisabled])
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:GBASettingsDropboxSyncKey] && [DBClientsManager authorizedClient] != nil && [[GBASyncManager sharedManager] isSyncing] && [[GBASyncManager sharedManager] hasPendingDownloadForROM:rom] && ![rom syncingDisabled])
     {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Syncing with Dropbox", @"")
                                                         message:NSLocalizedString(@"Data for this game is currently being downloaded. To prevent data loss, please wait until the download is complete, then launch the game.", @"")

@@ -140,12 +140,6 @@
 	</array>
 	<key>CFBundleVersion</key>
 	<string>2.1</string>
-	<key>LSQpplicationQueriesSchemes</key>
-	<array>
-		<string>twitter</string>
-		<string>twitterrific</string>
-		<string>tweetbot</string>
-	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
@@ -190,8 +184,6 @@
 	<array>
 		<string>armv7</string>
 	</array>
-	<key>UIRequiresFullScreen</key>
-	<true/>
 	<key>UIStatusBarHidden</key>
 	<false/>
 	<key>UIStatusBarHidden~ipad</key>
@@ -313,5 +305,10 @@
 			</dict>
 		</dict>
 	</array>
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>dbapi-8-emm</string>
+        <string>dbapi-2</string>
+    </array>
 </dict>
 </plist>

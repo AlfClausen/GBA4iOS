@@ -40,9 +40,7 @@
         }
         else
         {
-            UIInterfaceOrientation o = [[UIApplication sharedApplication] statusBarOrientation];
-            
-            if (UIInterfaceOrientationIsPortrait(o))
+            if (UIInterfaceOrientationIsPortrait(fromViewController.interfaceOrientation))
             {
                 frame.origin.y = CGRectGetHeight(frame);
             }
@@ -91,9 +89,7 @@
         }
         else
         {
-            UIInterfaceOrientation o = [[UIApplication sharedApplication] statusBarOrientation];
-            
-            if (UIInterfaceOrientationIsPortrait(o))
+            if (UIInterfaceOrientationIsPortrait(fromViewController.interfaceOrientation))
             {
                 frame.origin.y = CGRectGetHeight(frame);
             }

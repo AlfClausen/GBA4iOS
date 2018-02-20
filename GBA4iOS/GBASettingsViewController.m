@@ -22,7 +22,7 @@
 #import "GBABluetoothLinkManager.h"
 #import "UIDevice-Hardware.h"
 
-#import <DropboxSDK/DropboxSDK.h>
+#import <ObjectiveDropboxOfficial/ObjectiveDropboxOfficial.h>
 
 #define FRAME_SKIP_SECTION 0
 #define LINKING_SECTION 1
@@ -239,7 +239,7 @@ NSString *const GBASettingsDropboxStatusChangedNotification = @"GBASettingsDropb
     }
     else if (section == DROPBOX_SYNC_SECTION)
     {
-        if (![[DBSession sharedSession] isLinked] || ![[NSUserDefaults standardUserDefaults] boolForKey:GBASettingsDropboxSyncKey])
+        if (!([DBClientsManager authorizedClient] != nil) || ![[NSUserDefaults standardUserDefaults] boolForKey:GBASettingsDropboxSyncKey])
         {
             return 1;
         }
@@ -508,25 +508,21 @@ NSString *const GBASettingsDropboxStatusChangedNotification = @"GBASettingsDropb
     }
     else if (indexPath.row == 1)
     {
-        username = @"kajinka13";
+        username = @"pau1thor";
     }
     else if (indexPath.row == 2)
     {
-        username = @"pau1thor";
+        username = @"alyssasurowiec";
     }
     else if (indexPath.row == 3)
     {
-        username = @"alyssasurowiec";
+        username = @"rakashazi";
     }
     else if (indexPath.row == 4)
     {
-        username = @"rakashazi";
-    }
-    else if (indexPath.row == 5)
-    {
         username = @"zodttd";
     }
-    else if (indexPath.row == 6)
+    else if (indexPath.row == 5)
     {
         username = @"mrjuanfernandez";
     }
