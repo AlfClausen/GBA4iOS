@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1461E664FB42A2746230C72A /* libPods-GBA4iOS-Simulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A61E330C1AB95BB25CB56E48 /* libPods-GBA4iOS-Simulator.a */; };
 		1A5BAE7F17D04B0A00BABC01 /* overlays128.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A5BAE7E17D04B0A00BABC01 /* overlays128.png */; };
 		1AD65D7B17D2DCFD00E2CF0C /* GBAControllerSkinSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD65D7917D2DCFD00E2CF0C /* GBAControllerSkinSelectionViewController.m */; };
 		1AD971E717D2B6EC007097BC /* GBAControllerSkinDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD971E617D2B6EC007097BC /* GBAControllerSkinDetailViewController.m */; };
 		1AD971F317D2C6ED007097BC /* GBAControllerSkin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD971F117D2C6ED007097BC /* GBAControllerSkin.m */; };
-		36BB379009474825B993FD0E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B7AFB44A5AB34C2982DE856F /* libPods.a */; };
-		80E8A8F81CA9568F00DEA965 /* GBAAnalyticsTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E8A8F71CA9568F00DEA965 /* GBAAnalyticsTracker.m */; };
-		80E8A8FA1CA95DA100DEA965 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80E8A8F91CA95DA100DEA965 /* GoogleService-Info.plist */; };
+		2D9107CF1DE637F50014DB1A /* libPods-GBA4iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D9107CE1DE637F50014DB1A /* libPods-GBA4iOS.a */; };
+		2D9107D11DE637FD0014DB1A /* libPods-GBA4iOS-Simulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D9107D01DE637FD0014DB1A /* libPods-GBA4iOS-Simulator.a */; };
+		4996200C1BCB0E000010FBBE /* Acknowledgements.html in Resources */ = {isa = PBXBuildFile; fileRef = BFBA77B919B715E1000E8425 /* Acknowledgements.html */; };
+		54CCFA4B5F8675A7EC9A70CA /* libPods-GBA4iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C0BA84C05D1CD938302AEB /* libPods-GBA4iOS.a */; };
 		BF02AFDB182F3E590031B8B6 /* GBASyncingOverviewViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BF02AFDA182F3E590031B8B6 /* GBASyncingOverviewViewController.mm */; };
 		BF02AFDF182F6E200031B8B6 /* GBASyncingDetailViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BF02AFDE182F6E200031B8B6 /* GBASyncingDetailViewController.mm */; };
 		BF02D2C4197344950034A515 /* GBASoftwareUpdate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF02D2C3197344950034A515 /* GBASoftwareUpdate.m */; };
@@ -128,7 +130,7 @@
 		BF33ECFE19C13188006E534B /* MCPeerID+Conveniences.m in Sources */ = {isa = PBXBuildFile; fileRef = BF33ECFC19C13188006E534B /* MCPeerID+Conveniences.m */; };
 		BF356C7A18814A180005E1FC /* GBACheatTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF356C7918814A180005E1FC /* GBACheatTextView.m */; };
 		BF356C7B18814A180005E1FC /* GBACheatTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF356C7918814A180005E1FC /* GBACheatTextView.m */; };
-		BF356C8318827E160005E1FC /* GBAEmulatorCore-Simulator.mm in Sources */ = {isa = PBXBuildFile; fileRef = BF356C8218827E160005E1FC /* GBAEmulatorCore-Simulator.mm */; };
+		BF356C8318827E160005E1FC /* GBAEmulatorCore-Simulator.mm in Sources */ = {isa = PBXBuildFile; fileRef = BF356C8218827E160005E1FC /* GBAEmulatorCore-Simulator.mm */; settings = {COMPILER_FLAGS = "-Wno-inconsistent-missing-override"; }; };
 		BF359B94187A205400B4CA53 /* GBAEventDistributionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF359B93187A205400B4CA53 /* GBAEventDistributionTableViewCell.m */; };
 		BF359B95187A205400B4CA53 /* GBAEventDistributionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF359B93187A205400B4CA53 /* GBAEventDistributionTableViewCell.m */; };
 		BF359B98187A64C000B4CA53 /* NSDate+Comparing.m in Sources */ = {isa = PBXBuildFile; fileRef = BF359B97187A64C000B4CA53 /* NSDate+Comparing.m */; };
@@ -222,7 +224,6 @@
 		BFB89E4618909EE8002E5F26 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = BFB89E3B18909EE8002E5F26 /* Default-Portrait~ipad.png */; };
 		BFB89E4718909EE8002E5F26 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFB89E3C18909EE8002E5F26 /* Default@2x.png */; };
 		BFB89E4818909EE8002E5F26 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFB89E3C18909EE8002E5F26 /* Default@2x.png */; };
-		BFBA77BA19B715E1000E8425 /* Acknowledgements.html in Resources */ = {isa = PBXBuildFile; fileRef = BFBA77B919B715E1000E8425 /* Acknowledgements.html */; };
 		BFBA77BB19B715E1000E8425 /* Acknowledgements.html in Resources */ = {isa = PBXBuildFile; fileRef = BFBA77B919B715E1000E8425 /* Acknowledgements.html */; };
 		BFBA77BE19B71602000E8425 /* GBAAcknowledgementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBA77BD19B71602000E8425 /* GBAAcknowledgementsViewController.m */; };
 		BFBA77BF19B71602000E8425 /* GBAAcknowledgementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBA77BD19B71602000E8425 /* GBAAcknowledgementsViewController.m */; };
@@ -254,7 +255,6 @@
 		BFF70ED519BD0CAF00009DAF /* UITableViewController+ControllerSkins.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF70ED319BD0CAF00009DAF /* UITableViewController+ControllerSkins.m */; };
 		BFF70ED919BE667900009DAF /* GBAControllerSkinImageResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF70ED819BE667900009DAF /* GBAControllerSkinImageResponseSerializer.m */; };
 		BFF70EDA19BE667900009DAF /* GBAControllerSkinImageResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF70ED819BE667900009DAF /* GBAControllerSkinImageResponseSerializer.m */; };
-		BFF7615219E731D800C403A0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF7615119E731D800C403A0 /* libPods.a */; };
 		BFFA355217ECD2A70038D34F /* Default.gbaskin in Resources */ = {isa = PBXBuildFile; fileRef = BFFA355117ECD2A70038D34F /* Default.gbaskin */; };
 		BFFBCCD61850505A005187DF /* GBASyncAllFilesOperation.mm in Sources */ = {isa = PBXBuildFile; fileRef = BFFBCCD51850505A005187DF /* GBASyncAllFilesOperation.mm */; };
 		BFFBCCD71850505A005187DF /* GBASyncAllFilesOperation.mm in Sources */ = {isa = PBXBuildFile; fileRef = BFFBCCD51850505A005187DF /* GBASyncAllFilesOperation.mm */; };
@@ -371,7 +371,7 @@
 		CC86CC1C17BEAFAB00A4B84E /* ButtonConfigView.cc in Sources */ = {isa = PBXBuildFile; fileRef = CCFA719A179D2FE400768D24 /* ButtonConfigView.cc */; settings = {COMPILER_FLAGS = "-w"; }; };
 		CC8BB0B31799A4D900F9864F /* GBAEmulationViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = CC8BB0B21799A4D900F9864F /* GBAEmulationViewController.mm */; };
 		CC8D5A7A17AAE3A800E89F43 /* GBAControllerView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8D5A7917AAE3A800E89F43 /* GBAControllerView.m */; };
-		CC96F01117C29A1E00C7DD0C /* GBAEmulatorCore.mm in Sources */ = {isa = PBXBuildFile; fileRef = CC15E541179F027300449972 /* GBAEmulatorCore.mm */; };
+		CC96F01117C29A1E00C7DD0C /* GBAEmulatorCore.mm in Sources */ = {isa = PBXBuildFile; fileRef = CC15E541179F027300449972 /* GBAEmulatorCore.mm */; settings = {COMPILER_FLAGS = "-Wno-inconsistent-missing-override"; }; };
 		CC96F01717C2A0AD00C7DD0C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC2D571A1798F2EC00C616EB /* Images.xcassets */; };
 		CC9EA6CD17FE7FC3005BD5E6 /* UITableViewController+Theming.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9EA6CA17FE7CE1005BD5E6 /* UITableViewController+Theming.m */; };
 		CCA1056B17F6A5F80018D364 /* GBASplitViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = CCA1056A17F6A5F80018D364 /* GBASplitViewController.mm */; };
@@ -481,6 +481,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0306D0BDB517C15F80EBE758 /* Pods-GBA4iOS.jailbreak.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBA4iOS.jailbreak.xcconfig"; path = "Pods/Target Support Files/Pods-GBA4iOS/Pods-GBA4iOS.jailbreak.xcconfig"; sourceTree = "<group>"; };
+		113F62D0ADF9B7E86F56F8A3 /* Pods-GBA4iOS.enterprise.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBA4iOS.enterprise.xcconfig"; path = "Pods/Target Support Files/Pods-GBA4iOS/Pods-GBA4iOS.enterprise.xcconfig"; sourceTree = "<group>"; };
+		193D7609001E625F1B8D1BCE /* Pods-GBA4iOS-Simulator.enterprise.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBA4iOS-Simulator.enterprise.xcconfig"; path = "Pods/Target Support Files/Pods-GBA4iOS-Simulator/Pods-GBA4iOS-Simulator.enterprise.xcconfig"; sourceTree = "<group>"; };
 		1A5BAE7E17D04B0A00BABC01 /* overlays128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = overlays128.png; sourceTree = "<group>"; };
 		1AD65D7817D2DCFD00E2CF0C /* GBAControllerSkinSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBAControllerSkinSelectionViewController.h; sourceTree = "<group>"; };
 		1AD65D7917D2DCFD00E2CF0C /* GBAControllerSkinSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBAControllerSkinSelectionViewController.m; sourceTree = "<group>"; };
@@ -488,15 +491,22 @@
 		1AD971E617D2B6EC007097BC /* GBAControllerSkinDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBAControllerSkinDetailViewController.m; sourceTree = "<group>"; };
 		1AD971F017D2C6ED007097BC /* GBAControllerSkin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBAControllerSkin.h; sourceTree = "<group>"; };
 		1AD971F117D2C6ED007097BC /* GBAControllerSkin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBAControllerSkin.m; sourceTree = "<group>"; };
+		22C0BA84C05D1CD938302AEB /* libPods-GBA4iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GBA4iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		236C527F9166A2B0B23A3AAC /* Pods-GBA4iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBA4iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GBA4iOS/Pods-GBA4iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		2D9107CE1DE637F50014DB1A /* libPods-GBA4iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-GBA4iOS.a"; path = "Pods/../build/Debug-iphoneos/libPods-GBA4iOS.a"; sourceTree = "<group>"; };
+		2D9107D01DE637FD0014DB1A /* libPods-GBA4iOS-Simulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-GBA4iOS-Simulator.a"; path = "Pods/../build/Debug-iphoneos/libPods-GBA4iOS-Simulator.a"; sourceTree = "<group>"; };
 		4A0F09D4E8E87AAE2BF774E2 /* Pods.ad hoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods.ad hoc.xcconfig"; path = "Pods/Target Support Files/Pods/Pods.ad hoc.xcconfig"; sourceTree = "<group>"; };
+		4A4E21F98288C07B5BA9A6E5 /* Pods-GBA4iOS-Simulator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBA4iOS-Simulator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GBA4iOS-Simulator/Pods-GBA4iOS-Simulator.debug.xcconfig"; sourceTree = "<group>"; };
 		4BC912A8C9F0C9806CCC83B8 /* Pods.jailbreak.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.jailbreak.xcconfig; path = "Pods/Target Support Files/Pods/Pods.jailbreak.xcconfig"; sourceTree = "<group>"; };
-		80E8A8F61CA9568F00DEA965 /* GBAAnalyticsTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBAAnalyticsTracker.h; sourceTree = "<group>"; };
-		80E8A8F71CA9568F00DEA965 /* GBAAnalyticsTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBAAnalyticsTracker.m; sourceTree = "<group>"; };
-		80E8A8F91CA95DA100DEA965 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5B7060B78E65062ADA149828 /* Pods-GBA4iOS-Simulator.jailbreak.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBA4iOS-Simulator.jailbreak.xcconfig"; path = "Pods/Target Support Files/Pods-GBA4iOS-Simulator/Pods-GBA4iOS-Simulator.jailbreak.xcconfig"; sourceTree = "<group>"; };
+		5F522579A91929D0A1794854 /* Pods-GBA4iOS.ad hoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBA4iOS.ad hoc.xcconfig"; path = "Pods/Target Support Files/Pods-GBA4iOS/Pods-GBA4iOS.ad hoc.xcconfig"; sourceTree = "<group>"; };
 		8782243FD47ECE841FACE25A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		96AAF68A93CA1A6118EB130D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A1C556FA45115F5391A4909E /* Pods.enterprise.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.enterprise.xcconfig; path = "Pods/Target Support Files/Pods/Pods.enterprise.xcconfig"; sourceTree = "<group>"; };
+		A61E330C1AB95BB25CB56E48 /* libPods-GBA4iOS-Simulator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GBA4iOS-Simulator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4497A00B0961C29DF69711B /* Pods-GBA4iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBA4iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-GBA4iOS/Pods-GBA4iOS.release.xcconfig"; sourceTree = "<group>"; };
 		B7AFB44A5AB34C2982DE856F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEA0C34405BC6B07E6F94F64 /* Pods-GBA4iOS-Simulator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBA4iOS-Simulator.release.xcconfig"; path = "Pods/Target Support Files/Pods-GBA4iOS-Simulator/Pods-GBA4iOS-Simulator.release.xcconfig"; sourceTree = "<group>"; };
 		BF02AFD9182F3E590031B8B6 /* GBASyncingOverviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBASyncingOverviewViewController.h; sourceTree = "<group>"; };
 		BF02AFDA182F3E590031B8B6 /* GBASyncingOverviewViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GBASyncingOverviewViewController.mm; sourceTree = "<group>"; };
 		BF02AFDD182F6E200031B8B6 /* GBASyncingDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBASyncingDetailViewController.h; sourceTree = "<group>"; };
@@ -544,7 +554,7 @@
 		BF2AC88D18543BCA008928D0 /* GBASyncMoveOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBASyncMoveOperation.m; sourceTree = "<group>"; };
 		BF2AC89018543BD9008928D0 /* GBASyncDeleteOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBASyncDeleteOperation.h; sourceTree = "<group>"; };
 		BF2AC89118543BD9008928D0 /* GBASyncDeleteOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBASyncDeleteOperation.m; sourceTree = "<group>"; };
-		BF2F35D5183FF6F9002ACE90 /* GBA4iOS copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GBA4iOS copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF2F35D5183FF6F9002ACE90 /* GBA4iOS Simulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GBA4iOS Simulator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF33ECEA19C13127006E534B /* GBALinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBALinkViewController.h; sourceTree = "<group>"; };
 		BF33ECEB19C13127006E534B /* GBALinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBALinkViewController.m; sourceTree = "<group>"; };
 		BF33ECEC19C13127006E534B /* GBALinkNearbyPeersHeaderFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBALinkNearbyPeersHeaderFooterView.h; sourceTree = "<group>"; };
@@ -950,6 +960,7 @@
 		CCFA71F7179D304700768D24 /* LzmaDec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = LzmaDec.c; path = "emu-ex-plus-alpha/GBA.emu/src/vbam/7z_C/LzmaDec.c"; sourceTree = SOURCE_ROOT; };
 		CCFA71F8179D304700768D24 /* Ppmd7.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Ppmd7.c; path = "emu-ex-plus-alpha/GBA.emu/src/vbam/7z_C/Ppmd7.c"; sourceTree = SOURCE_ROOT; };
 		CCFA71F9179D304700768D24 /* Ppmd7Dec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Ppmd7Dec.c; path = "emu-ex-plus-alpha/GBA.emu/src/vbam/7z_C/Ppmd7Dec.c"; sourceTree = SOURCE_ROOT; };
+		F4425AFDE29A59D08E8D9AE3 /* Pods-GBA4iOS-Simulator.ad hoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBA4iOS-Simulator.ad hoc.xcconfig"; path = "Pods/Target Support Files/Pods-GBA4iOS-Simulator/Pods-GBA4iOS-Simulator.ad hoc.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -957,7 +968,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFF7615219E731D800C403A0 /* libPods.a in Frameworks */,
+				2D9107D11DE637FD0014DB1A /* libPods-GBA4iOS-Simulator.a in Frameworks */,
 				BF8789F718404AC200C81AB2 /* GameController.framework in Frameworks */,
 				BF7C0E6D189DA30400794093 /* CrashReporter.framework in Frameworks */,
 				BF2F35B5183FF6F9002ACE90 /* CoreMedia.framework in Frameworks */,
@@ -973,6 +984,7 @@
 				BF2F35C0183FF6F9002ACE90 /* CoreGraphics.framework in Frameworks */,
 				BF2F35C2183FF6F9002ACE90 /* UIKit.framework in Frameworks */,
 				BF2F35C3183FF6F9002ACE90 /* Foundation.framework in Frameworks */,
+				1461E664FB42A2746230C72A /* libPods-GBA4iOS-Simulator.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -980,6 +992,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D9107CF1DE637F50014DB1A /* libPods-GBA4iOS.a in Frameworks */,
 				BF2638C618700E2400CE55F9 /* CoreMotion.framework in Frameworks */,
 				BF8789F818404AC800C81AB2 /* GameController.framework in Frameworks */,
 				CCC0F23317FA95C600235781 /* CoreMedia.framework in Frameworks */,
@@ -996,7 +1009,7 @@
 				BFC47BC2189DAA6D006C4D55 /* CrashReporter.framework in Frameworks */,
 				CC2D57041798F2EC00C616EB /* UIKit.framework in Frameworks */,
 				CC2D57001798F2EC00C616EB /* Foundation.framework in Frameworks */,
-				36BB379009474825B993FD0E /* libPods.a in Frameworks */,
+				54CCFA4B5F8675A7EC9A70CA /* libPods-GBA4iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1013,16 +1026,6 @@
 				BF104A8217EB7B8F003C86F5 /* Cells */,
 			);
 			name = "Controller Skins";
-			sourceTree = "<group>";
-		};
-		80E8A8FB1CA95DAB00DEA965 /* Analytics */ = {
-			isa = PBXGroup;
-			children = (
-				80E8A8F91CA95DA100DEA965 /* GoogleService-Info.plist */,
-				80E8A8F61CA9568F00DEA965 /* GBAAnalyticsTracker.h */,
-				80E8A8F71CA9568F00DEA965 /* GBAAnalyticsTracker.m */,
-			);
-			name = Analytics;
 			sourceTree = "<group>";
 		};
 		BF02AFD8182F3E3A0031B8B6 /* Syncing */ = {
@@ -1543,7 +1546,7 @@
 			isa = PBXGroup;
 			children = (
 				CC2D56FC1798F2EC00C616EB /* GBA4iOS.app */,
-				BF2F35D5183FF6F9002ACE90 /* GBA4iOS copy.app */,
+				BF2F35D5183FF6F9002ACE90 /* GBA4iOS Simulator.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1551,6 +1554,8 @@
 		CC2D56FE1798F2EC00C616EB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2D9107D01DE637FD0014DB1A /* libPods-GBA4iOS-Simulator.a */,
+				2D9107CE1DE637F50014DB1A /* libPods-GBA4iOS.a */,
 				BFF7615119E731D800C403A0 /* libPods.a */,
 				BF7C0E68189DA30400794093 /* CrashReporter.framework */,
 				BF2638C518700E2400CE55F9 /* CoreMotion.framework */,
@@ -1572,6 +1577,8 @@
 				CC2D57031798F2EC00C616EB /* UIKit.framework */,
 				CC2D57211798F2ED00C616EB /* XCTest.framework */,
 				B7AFB44A5AB34C2982DE856F /* libPods.a */,
+				22C0BA84C05D1CD938302AEB /* libPods-GBA4iOS.a */,
+				A61E330C1AB95BB25CB56E48 /* libPods-GBA4iOS-Simulator.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1583,7 +1590,6 @@
 				CC2D570F1798F2EC00C616EB /* GBAAppDelegate.mm */,
 				CC2D573F1798F44700C616EB /* GBAROMTableViewController.h */,
 				CC2D57401798F44700C616EB /* GBAROMTableViewController.mm */,
-				80E8A8FB1CA95DAB00DEA965 /* Analytics */,
 				BF8C11461A2D01DF00126A3D /* GBANoGamesView.xib */,
 				BF73C2ED1822EA2F00DD69FD /* Dropbox Sync */,
 				CC7AC2EB17C694E800FB7642 /* Emulation */,
@@ -1984,6 +1990,16 @@
 				4A0F09D4E8E87AAE2BF774E2 /* Pods.ad hoc.xcconfig */,
 				A1C556FA45115F5391A4909E /* Pods.enterprise.xcconfig */,
 				4BC912A8C9F0C9806CCC83B8 /* Pods.jailbreak.xcconfig */,
+				236C527F9166A2B0B23A3AAC /* Pods-GBA4iOS.debug.xcconfig */,
+				B4497A00B0961C29DF69711B /* Pods-GBA4iOS.release.xcconfig */,
+				5F522579A91929D0A1794854 /* Pods-GBA4iOS.ad hoc.xcconfig */,
+				113F62D0ADF9B7E86F56F8A3 /* Pods-GBA4iOS.enterprise.xcconfig */,
+				0306D0BDB517C15F80EBE758 /* Pods-GBA4iOS.jailbreak.xcconfig */,
+				4A4E21F98288C07B5BA9A6E5 /* Pods-GBA4iOS-Simulator.debug.xcconfig */,
+				BEA0C34405BC6B07E6F94F64 /* Pods-GBA4iOS-Simulator.release.xcconfig */,
+				F4425AFDE29A59D08E8D9AE3 /* Pods-GBA4iOS-Simulator.ad hoc.xcconfig */,
+				193D7609001E625F1B8D1BCE /* Pods-GBA4iOS-Simulator.enterprise.xcconfig */,
+				5B7060B78E65062ADA149828 /* Pods-GBA4iOS-Simulator.jailbreak.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -1995,12 +2011,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF2F35D0183FF6F9002ACE90 /* Build configuration list for PBXNativeTarget "GBA4iOS-Simulator" */;
 			buildPhases = (
-				BF2F34DC183FF6F9002ACE90 /* Check Pods Manifest.lock */,
+				BF2F34DC183FF6F9002ACE90 /* [CP] Check Pods Manifest.lock */,
 				BF2F34DD183FF6F9002ACE90 /* Sources */,
 				BF2F35B4183FF6F9002ACE90 /* Frameworks */,
 				BF2F35C5183FF6F9002ACE90 /* Resources */,
-				BF2F35CF183FF6F9002ACE90 /* Copy Pods Resources */,
-				B223BA20E1E674C67AE26FDF /* Embed Pods Frameworks */,
+				BF2F35CF183FF6F9002ACE90 /* [CP] Copy Pods Resources */,
+				7B8C6CE570F945441B170E3F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -2008,22 +2024,22 @@
 			);
 			name = "GBA4iOS-Simulator";
 			productName = GBA4iOS;
-			productReference = BF2F35D5183FF6F9002ACE90 /* GBA4iOS copy.app */;
+			productReference = BF2F35D5183FF6F9002ACE90 /* GBA4iOS Simulator.app */;
 			productType = "com.apple.product-type.application";
 		};
 		CC2D56FB1798F2EC00C616EB /* GBA4iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC2D57311798F2ED00C616EB /* Build configuration list for PBXNativeTarget "GBA4iOS" */;
 			buildPhases = (
-				939E031126014661A3BB86B3 /* Check Pods Manifest.lock */,
+				939E031126014661A3BB86B3 /* [CP] Check Pods Manifest.lock */,
 				CC2D56F81798F2EC00C616EB /* Sources */,
 				CC2D56F91798F2EC00C616EB /* Frameworks */,
 				CC2D56FA1798F2EC00C616EB /* Resources */,
-				D6789B793A0D43B9AEC5FF1A /* Copy Pods Resources */,
+				D6789B793A0D43B9AEC5FF1A /* [CP] Copy Pods Resources */,
 				657CB59918BF14DD00217F96 /* ShellScript */,
 				BF7C0E74189DA4CB00794093 /* ShellScript */,
 				BFB39ADD1958D796003330AE /* Embed App Extensions */,
-				726F1D439835D5CB54739E2F /* Embed Pods Frameworks */,
+				76A3A831DDD281E2507F82A4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -2041,11 +2057,11 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = GBA;
-				LastUpgradeCheck = 0600;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Riley Testut";
 				TargetAttributes = {
 					BF2F34DB183FF6F9002ACE90 = {
-						DevelopmentTeam = 6XVY5G3U44;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -2053,7 +2069,8 @@
 						};
 					};
 					CC2D56FB1798F2EC00C616EB = {
-						DevelopmentTeam = VFGQS7TV96;
+						DevelopmentTeam = 3J465KX486;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -2135,8 +2152,7 @@
 				BF8C11431A2D01DF00126A3D /* GBANoGamesView.xib in Resources */,
 				1A5BAE7F17D04B0A00BABC01 /* overlays128.png in Resources */,
 				CC5044E71814C474009F7B9E /* Default.gbcskin in Resources */,
-				80E8A8FA1CA95DA100DEA965 /* GoogleService-Info.plist in Resources */,
-				BFBA77BA19B715E1000E8425 /* Acknowledgements.html in Resources */,
+				4996200C1BCB0E000010FBBE /* Acknowledgements.html in Resources */,
 				BFB89E4718909EE8002E5F26 /* Default@2x.png in Resources */,
 				BF3B2B771A2E3F3500301AE1 /* GBA4iOS-InfoPlist.strings in Resources */,
 				BFB89E4518909EE8002E5F26 /* Default-Portrait~ipad.png in Resources */,
@@ -2161,79 +2177,110 @@
 			shellPath = /bin/sh;
 			shellScript = "APPBUNDLEPATH=\"${TARGET_BUILD_DIR}/${EXECUTABLE_NAME}.app/\"\nCRASHLYTICSKEYPATH=\"./Crashlytics.apikey\"\nif [ -f \"${CRASHLYTICSKEYPATH}\" ]; then\n    echo \"Copying Crashlytics api key file into app bundle.\"\n    cp \"${CRASHLYTICSKEYPATH}\" \"${APPBUNDLEPATH}\"\nfi";
 		};
-		726F1D439835D5CB54739E2F /* Embed Pods Frameworks */ = {
+		76A3A831DDD281E2507F82A4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GBA4iOS/Pods-GBA4iOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		939E031126014661A3BB86B3 /* Check Pods Manifest.lock */ = {
+		7B8C6CE570F945441B170E3F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GBA4iOS-Simulator/Pods-GBA4iOS-Simulator-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B223BA20E1E674C67AE26FDF /* Embed Pods Frameworks */ = {
+		939E031126014661A3BB86B3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GBA4iOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BF2F34DC183FF6F9002ACE90 /* Check Pods Manifest.lock */ = {
+		BF2F34DC183FF6F9002ACE90 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GBA4iOS-Simulator-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BF2F35CF183FF6F9002ACE90 /* Copy Pods Resources */ = {
+		BF2F35CF183FF6F9002ACE90 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GBA4iOS-Simulator/Pods-GBA4iOS-Simulator-resources.sh",
+				"${PODS_ROOT}/RSTWebViewController/RSTWebViewController/back_button.png",
+				"${PODS_ROOT}/RSTWebViewController/RSTWebViewController/back_button@2x.png",
+				"${PODS_ROOT}/RSTWebViewController/RSTWebViewController/back_button@3x.png",
+				"${PODS_ROOT}/RSTWebViewController/RSTWebViewController/forward_button.png",
+				"${PODS_ROOT}/RSTWebViewController/RSTWebViewController/forward_button@2x.png",
+				"${PODS_ROOT}/RSTWebViewController/RSTWebViewController/forward_button@3x.png",
+				"${PODS_ROOT}/RSTWebViewController/RSTWebViewController/UIActivities/chrome_activity.png",
+				"${PODS_ROOT}/RSTWebViewController/RSTWebViewController/UIActivities/chrome_activity@2x.png",
+				"${PODS_ROOT}/RSTWebViewController/RSTWebViewController/UIActivities/chrome_activity@3x.png",
+				"${PODS_ROOT}/RSTWebViewController/RSTWebViewController/UIActivities/safari_activity.png",
+				"${PODS_ROOT}/RSTWebViewController/RSTWebViewController/UIActivities/safari_activity@2x.png",
+				"${PODS_ROOT}/RSTWebViewController/RSTWebViewController/UIActivities/safari_activity@3x.png",
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/back_button.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/back_button@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/back_button@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/forward_button.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/forward_button@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/forward_button@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/chrome_activity.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/chrome_activity@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/chrome_activity@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/safari_activity.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/safari_activity@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/safari_activity@3x.png",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GBA4iOS-Simulator/Pods-GBA4iOS-Simulator-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BF7C0E74189DA4CB00794093 /* ShellScript */ = {
@@ -2249,19 +2296,44 @@
 			shellPath = /bin/sh;
 			shellScript = "key=$(cat Crashlytics.apikey 2>/dev/null)\nif [ -n \"$key\" ]; then\n    ./Pods/CrashlyticsFramework/Crashlytics.framework/run d542629b4f6625cfd5564d27318550321272076d\nfi";
 		};
-		D6789B793A0D43B9AEC5FF1A /* Copy Pods Resources */ = {
+		D6789B793A0D43B9AEC5FF1A /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GBA4iOS/Pods-GBA4iOS-resources.sh",
+				"${PODS_ROOT}/RSTWebViewController/RSTWebViewController/back_button.png",
+				"${PODS_ROOT}/RSTWebViewController/RSTWebViewController/back_button@2x.png",
+				"${PODS_ROOT}/RSTWebViewController/RSTWebViewController/back_button@3x.png",
+				"${PODS_ROOT}/RSTWebViewController/RSTWebViewController/forward_button.png",
+				"${PODS_ROOT}/RSTWebViewController/RSTWebViewController/forward_button@2x.png",
+				"${PODS_ROOT}/RSTWebViewController/RSTWebViewController/forward_button@3x.png",
+				"${PODS_ROOT}/RSTWebViewController/RSTWebViewController/UIActivities/chrome_activity.png",
+				"${PODS_ROOT}/RSTWebViewController/RSTWebViewController/UIActivities/chrome_activity@2x.png",
+				"${PODS_ROOT}/RSTWebViewController/RSTWebViewController/UIActivities/chrome_activity@3x.png",
+				"${PODS_ROOT}/RSTWebViewController/RSTWebViewController/UIActivities/safari_activity.png",
+				"${PODS_ROOT}/RSTWebViewController/RSTWebViewController/UIActivities/safari_activity@2x.png",
+				"${PODS_ROOT}/RSTWebViewController/RSTWebViewController/UIActivities/safari_activity@3x.png",
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/back_button.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/back_button@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/back_button@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/forward_button.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/forward_button@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/forward_button@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/chrome_activity.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/chrome_activity@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/chrome_activity@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/safari_activity.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/safari_activity@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/safari_activity@3x.png",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GBA4iOS/Pods-GBA4iOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -2583,7 +2655,6 @@
 				CC5045001814DC69009F7B9E /* Patch.cpp in Sources */,
 				CCC9B8AC1815AC7E005C90EE /* cpu.cpp in Sources */,
 				CC5044EE1814DC69009F7B9E /* Cheats.cpp in Sources */,
-				80E8A8F81CA9568F00DEA965 /* GBAAnalyticsTracker.m in Sources */,
 				CCFA7189179D2EAB00768D24 /* NavView.cc in Sources */,
 				CCC9B8981815AC7E005C90EE /* sprite_mapper.cpp in Sources */,
 				CC50450E1814DC69009F7B9E /* Gzip_Reader.cpp in Sources */,
@@ -2727,13 +2798,14 @@
 /* Begin XCBuildConfiguration section */
 		BF2F35D1183FF6F9002ACE90 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8782243FD47ECE841FACE25A /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 4A4E21F98288C07B5BA9A6E5 /* Pods-GBA4iOS-Simulator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_MODULES_AUTOLINK = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GBA4iOS/GBA4iOS-Prefix.pch";
@@ -2760,16 +2832,14 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "GBA4iOS/GBA4iOS-Info-Simulator.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"-Objc",
 					"-all_load",
 					"$(inherited)",
 				);
-				PRODUCT_NAME = "GBA4iOS copy";
+				PRODUCT_BUNDLE_IDENTIFIER = "${BUNDLE_ID}";
+				PRODUCT_NAME = "GBA4iOS Simulator";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2779,13 +2849,14 @@
 		};
 		BF2F35D2183FF6F9002ACE90 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 96AAF68A93CA1A6118EB130D /* Pods.release.xcconfig */;
+			baseConfigurationReference = BEA0C34405BC6B07E6F94F64 /* Pods-GBA4iOS-Simulator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_MODULES_AUTOLINK = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GBA4iOS/GBA4iOS-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -2807,16 +2878,14 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "GBA4iOS/GBA4iOS-Info-Simulator.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"-Objc",
 					"-all_load",
 					"$(inherited)",
 				);
-				PRODUCT_NAME = "GBA4iOS copy";
+				PRODUCT_BUNDLE_IDENTIFIER = "${BUNDLE_ID}";
+				PRODUCT_NAME = "GBA4iOS Simulator";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2826,13 +2895,14 @@
 		};
 		BF2F35D3183FF6F9002ACE90 /* Ad Hoc */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A0F09D4E8E87AAE2BF774E2 /* Pods.ad hoc.xcconfig */;
+			baseConfigurationReference = F4425AFDE29A59D08E8D9AE3 /* Pods-GBA4iOS-Simulator.ad hoc.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_MODULES_AUTOLINK = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GBA4iOS/GBA4iOS-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -2854,16 +2924,14 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "GBA4iOS/GBA4iOS-Info-Simulator.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"-Objc",
 					"-all_load",
 					"$(inherited)",
 				);
-				PRODUCT_NAME = "GBA4iOS copy";
+				PRODUCT_BUNDLE_IDENTIFIER = "${BUNDLE_ID}";
+				PRODUCT_NAME = "GBA4iOS Simulator";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2876,6 +2944,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				BUNDLE_ID = com.rileytestut.enterprise.GBA4iOS;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -2885,18 +2954,25 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: ChinaVDI(Beijing)Technology Co.,Ltd.";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: ChinaVDI(Beijing)Technology Co.,Ltd.";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"${SRCROOT}/**",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
@@ -2913,7 +2989,7 @@
 					"\"$(SRCROOT)/emu-ex-plus-alpha/GBC.emu/src/\"",
 					"$(inherited)",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_CFLAGS = (
 					"-I\"$(SRCROOT)/emu-ex-plus-alpha/imagine/bundle/darwin-iOS/include\"",
 					"-I\"$(SRCROOT)/emu-ex-plus-alpha/imagine/bundle/darwin-iOS/armv7/include\"",
@@ -2983,7 +3059,7 @@
 		};
 		BF89A45218585D3100464448 /* Enterprise */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A1C556FA45115F5391A4909E /* Pods.enterprise.xcconfig */;
+			baseConfigurationReference = 113F62D0ADF9B7E86F56F8A3 /* Pods-GBA4iOS.enterprise.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -2991,8 +3067,9 @@
 				CLANG_MODULES_AUTOLINK = YES;
 				CODE_SIGN_ENTITLEMENTS = GBA4iOS/GBA4iOS.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: NETFOKS OOO";
-				ENABLE_BITCODE = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3J465KX486;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -3014,27 +3091,31 @@
 					"\"$(SRCROOT)/SFML/include/\"",
 				);
 				INFOPLIST_FILE = "GBA4iOS/GBA4iOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"-Objc",
 					"-all_load",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.github.GBA4iOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rileytestut.GBA4iOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Enterprise;
 		};
 		BF89A45318585D3100464448 /* Enterprise */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A1C556FA45115F5391A4909E /* Pods.enterprise.xcconfig */;
+			baseConfigurationReference = 193D7609001E625F1B8D1BCE /* Pods-GBA4iOS-Simulator.enterprise.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_MODULES_AUTOLINK = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GBA4iOS/GBA4iOS-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -3056,16 +3137,14 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "GBA4iOS/GBA4iOS-Info-Simulator.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"-Objc",
 					"-all_load",
 					"$(inherited)",
 				);
-				PRODUCT_NAME = "GBA4iOS copy";
+				PRODUCT_BUNDLE_IDENTIFIER = "${BUNDLE_ID}";
+				PRODUCT_NAME = "GBA4iOS Simulator";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3078,6 +3157,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				BUNDLE_ID = com.rileytestut.enterprise.GBA4iOS;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -3087,16 +3167,23 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"${SRCROOT}/**",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
@@ -3113,7 +3200,7 @@
 					"\"$(SRCROOT)/emu-ex-plus-alpha/GBC.emu/src/\"",
 					"$(inherited)",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_CFLAGS = (
 					"-I\"$(SRCROOT)/emu-ex-plus-alpha/imagine/bundle/darwin-iOS/include\"",
 					"-I\"$(SRCROOT)/emu-ex-plus-alpha/imagine/bundle/darwin-iOS/armv7/include\"",
@@ -3183,7 +3270,7 @@
 		};
 		BF941F9C18B71CC0002510D0 /* Jailbreak */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4BC912A8C9F0C9806CCC83B8 /* Pods.jailbreak.xcconfig */;
+			baseConfigurationReference = 0306D0BDB517C15F80EBE758 /* Pods-GBA4iOS.jailbreak.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -3191,7 +3278,9 @@
 				CLANG_MODULES_AUTOLINK = YES;
 				CODE_SIGN_ENTITLEMENTS = GBA4iOS/GBA4iOS.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				ENABLE_BITCODE = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3J465KX486;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GBA4iOS/GBA4iOS-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -3208,26 +3297,30 @@
 					"\"$(SRCROOT)/SFML/include/\"",
 				);
 				INFOPLIST_FILE = "GBA4iOS/GBA4iOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"-Objc",
 					"-all_load",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.github.GBA4iOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rileytestut.GBA4iOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Jailbreak;
 		};
 		BF941F9D18B71CC0002510D0 /* Jailbreak */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4BC912A8C9F0C9806CCC83B8 /* Pods.jailbreak.xcconfig */;
+			baseConfigurationReference = 5B7060B78E65062ADA149828 /* Pods-GBA4iOS-Simulator.jailbreak.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_MODULES_AUTOLINK = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GBA4iOS/GBA4iOS-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -3249,16 +3342,14 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "GBA4iOS/GBA4iOS-Info-Simulator.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"-Objc",
 					"-all_load",
 					"$(inherited)",
 				);
-				PRODUCT_NAME = "GBA4iOS copy";
+				PRODUCT_BUNDLE_IDENTIFIER = "${BUNDLE_ID}";
+				PRODUCT_NAME = "GBA4iOS Simulator";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3271,6 +3362,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				BUNDLE_ID = com.rileytestut.GBA4iOS;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -3280,21 +3372,29 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"${SRCROOT}/**",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 2;
 				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
@@ -3311,7 +3411,7 @@
 					"\"$(SRCROOT)/emu-ex-plus-alpha/GBC.emu/src/\"",
 					"$(inherited)",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = (
 					"-I\"$(SRCROOT)/emu-ex-plus-alpha/imagine/bundle/darwin-iOS/include\"",
@@ -3384,6 +3484,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				BUNDLE_ID = com.rileytestut.GBA4iOS;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -3393,17 +3494,24 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"${SRCROOT}/**",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
@@ -3420,7 +3528,7 @@
 					"\"$(SRCROOT)/emu-ex-plus-alpha/GBC.emu/src/\"",
 					"$(inherited)",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_CFLAGS = (
 					"-I\"$(SRCROOT)/emu-ex-plus-alpha/imagine/bundle/darwin-iOS/include\"",
 					"-I\"$(SRCROOT)/emu-ex-plus-alpha/imagine/bundle/darwin-iOS/armv7/include\"",
@@ -3490,7 +3598,7 @@
 		};
 		CC2D57321798F2ED00C616EB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8782243FD47ECE841FACE25A /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 236C527F9166A2B0B23A3AAC /* Pods-GBA4iOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -3499,7 +3607,8 @@
 				CODE_SIGN_ENTITLEMENTS = GBA4iOS/GBA4iOS.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				ENABLE_BITCODE = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3J465KX486;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -3521,21 +3630,24 @@
 					"\"$(SRCROOT)/SFML/include/\"",
 				);
 				INFOPLIST_FILE = "GBA4iOS/GBA4iOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"-Objc",
 					"-all_load",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.github.GBA4iOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rileytestut.GBA4iOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		CC2D57331798F2ED00C616EB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 96AAF68A93CA1A6118EB130D /* Pods.release.xcconfig */;
+			baseConfigurationReference = B4497A00B0961C29DF69711B /* Pods-GBA4iOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -3543,7 +3655,9 @@
 				CLANG_MODULES_AUTOLINK = YES;
 				CODE_SIGN_ENTITLEMENTS = GBA4iOS/GBA4iOS.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				ENABLE_BITCODE = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3J465KX486;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GBA4iOS/GBA4iOS-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -3560,13 +3674,16 @@
 					"\"$(SRCROOT)/SFML/include/\"",
 				);
 				INFOPLIST_FILE = "GBA4iOS/GBA4iOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"-Objc",
 					"-all_load",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.github.GBA4iOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rileytestut.GBA4iOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -3576,6 +3693,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				BUNDLE_ID = com.rileytestut.GBA4iOS;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -3585,18 +3703,25 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Yvette Testut (6XVY5G3U44)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Yvette Testut (6XVY5G3U44)";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"${SRCROOT}/**",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
@@ -3613,7 +3738,7 @@
 					"\"$(SRCROOT)/emu-ex-plus-alpha/GBC.emu/src/\"",
 					"$(inherited)",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_CFLAGS = (
 					"-I\"$(SRCROOT)/emu-ex-plus-alpha/imagine/bundle/darwin-iOS/include\"",
 					"-I\"$(SRCROOT)/emu-ex-plus-alpha/imagine/bundle/darwin-iOS/armv7/include\"",
@@ -3683,7 +3808,7 @@
 		};
 		CC347BB117A3CF2200309436 /* Ad Hoc */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A0F09D4E8E87AAE2BF774E2 /* Pods.ad hoc.xcconfig */;
+			baseConfigurationReference = 5F522579A91929D0A1794854 /* Pods-GBA4iOS.ad hoc.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -3692,7 +3817,8 @@
 				CODE_SIGN_ENTITLEMENTS = GBA4iOS/GBA4iOS.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				ENABLE_BITCODE = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3J465KX486;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -3714,13 +3840,16 @@
 					"\"$(SRCROOT)/SFML/include/\"",
 				);
 				INFOPLIST_FILE = "GBA4iOS/GBA4iOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"-Objc",
 					"-all_load",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.github.GBA4iOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rileytestut.GBA4iOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = "Ad Hoc";

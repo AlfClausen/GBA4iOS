@@ -22,7 +22,6 @@
 #import "GBAWebViewController.h"
 
 #import <Crashlytics/Crashlytics.h>
-#import "GBAAnalyticsTracker.h"
 
 #import "UIAlertView+RSTAdditions.h"
 #import "UIActionSheet+RSTAdditions.h"
@@ -98,7 +97,7 @@ dispatch_queue_t directoryContentsChangedQueue() {
         self.currentDirectory = documentsDirectory; 
         self.showFileExtensions = YES;
         self.showFolders = NO;
-        self.showSectionTitles = NO;
+        self.showSectionTitles = YES;
         self.showUnavailableFiles = YES;
         
         _downloadProgress = [[NSProgress alloc] initWithParent:nil userInfo:nil];
@@ -112,7 +111,11 @@ dispatch_queue_t directoryContentsChangedQueue() {
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(userRequestedToPlayROM:) name:GBAUserRequestedToPlayROMNotification object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardDidHide:) name:UIKeyboardDidHideNotification object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(settingsDidChange:) name:GBASettingsDidChangeNotification object:nil];
+        
+    } else {
+        return [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     }
+    
     return self;
 }
 
@@ -144,8 +147,6 @@ dispatch_queue_t directoryContentsChangedQueue() {
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    
-    [GBAAnalyticsTracker trackScreenWithName:@"ROM Table View"];
     
     [[UIApplication sharedApplication] setStatusBarStyle:[self preferredStatusBarStyle] animated:YES];
         
@@ -227,7 +228,9 @@ dispatch_queue_t directoryContentsChangedQueue() {
         
         if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
         {
-            if (UIInterfaceOrientationIsPortrait(self.interfaceOrientation))
+            UIInterfaceOrientation o = [[UIApplication sharedApplication] statusBarOrientation];
+            
+            if (UIInterfaceOrientationIsPortrait(o))
             {
                 frame.size.height = 29.0f;
             }
@@ -239,6 +242,8 @@ dispatch_queue_t directoryContentsChangedQueue() {
         
         frame;
     });
+    // Fixes a bug with the status bar hiding after the transition between emulation view and the ROM tableview when the device is rotated while emulation is running
+    [[UIApplication sharedApplication] setStatusBarHidden:[self prefersStatusBarHidden]];
 }
 
 - (BOOL)prefersStatusBarHidden
@@ -292,10 +297,6 @@ dispatch_queue_t directoryContentsChangedQueue() {
 - (BOOL)webViewController:(RSTWebViewController *)webViewController shouldInterceptDownloadRequest:(NSURLRequest *)request
 {
     NSString *fileExtension = request.URL.pathExtension.lowercaseString;
-    
-    [GBAAnalyticsTracker trackEventWithCategory:@"ROMs Downloading"
-                                         action:@"Download ROM"
-                                          label:[NSString stringWithContentsOfURL:request.URL usedEncoding:nil error:nil]];
 
     if ((([fileExtension isEqualToString:@"gb"] || [fileExtension isEqualToString:@"gbc"] || [fileExtension isEqualToString:@"gba"] || [fileExtension isEqualToString:@"zip"]) ||
          ([request.URL.host.lowercaseString rangeOfString:@"m.coolrom"].location == NSNotFound && [request.URL.host.lowercaseString rangeOfString:@".coolrom"].location != NSNotFound)) &&
@@ -1073,10 +1074,6 @@ dispatch_queue_t directoryContentsChangedQueue() {
 
 - (void)startROM:(GBAROM *)rom
 {
-    [GBAAnalyticsTracker trackEventWithCategory:@"ROMs"
-                                         action:@"Start ROM"
-                                          label:rom.name
-                                          value:@1];
     [self startROM:rom showSameROMAlertIfNeeded:YES];
 }
 

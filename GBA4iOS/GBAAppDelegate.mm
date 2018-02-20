@@ -22,8 +22,6 @@
 #import <DropboxSDK/DropboxSDK.h>
 #import <AFNetworking/AFNetworkActivityIndicatorManager.h>
 
-#import "GBAAnalyticsTracker.h"
-
 #import "UIView+DTDebug.h"
 #import "NSDate+Comparing.h"
 #import "UIAlertView+RSTAdditions.h"
@@ -61,12 +59,27 @@ static GBAAppDelegate *_appDelegate;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    _appDelegate = self;    
+    _appDelegate = self;
     
+    //[UIView toggleViewMainThreadChecking];
+    NSLog(@"%@",[[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject]);
+    //    if (![[NSUserDefaults standardUserDefaults] objectForKey:@"showedWarningAlert"])
+    //    {
+    //        dispatch_async(dispatch_get_main_queue(), ^{
+    //            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Welcome to GBA4iOS!", @"")
+    //                                                            message:NSLocalizedString(@"If at any time the app fails to open, please set the date back on your device at least 24 hours, then try opening the app again. Once the app is opened, you can set the date back to the correct time, and the app will continue to open normally. However, you'll need to repeat this process every time you restart your device.", @"")
+    //                                                           delegate:nil
+    //                                                  cancelButtonTitle:@"OK"
+    //                                                  otherButtonTitles:nil];
+    //            [alert show];
+    //        });
+    //
+    //        [[NSUserDefaults standardUserDefaults] setObject:[NSDate date] forKey:@"showedWarningAlert"];
+    //        [[NSUserDefaults standardUserDefaults] synchronize];
+    //    }
+        
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.tintColor = GBA4iOS_PURPLE_COLOR;
-    
-    [GBAAnalyticsTracker configureTracker];
     
     [[UISwitch appearance] setOnTintColor:GBA4iOS_PURPLE_COLOR]; // Apparently UISwitches don't inherit tint color from superview
     

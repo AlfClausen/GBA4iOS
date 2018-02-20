@@ -24,8 +24,6 @@
 
 #import <DropboxSDK/DropboxSDK.h>
 
-#import "GBAAnalyticsTracker.h"
-
 #define FRAME_SKIP_SECTION 0
 #define LINKING_SECTION 1
 #define AUDIO_SECTION 2
@@ -110,8 +108,6 @@ NSString *const GBASettingsDropboxStatusChangedNotification = @"GBASettingsDropb
     // Must call this manually before calling super to ensure the row is always deselected
     [self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:animated];
     [super viewWillAppear:animated];
-    
-    [GBAAnalyticsTracker trackScreenWithName:@"Settings View"];
 }
 
 - (void)dealloc
@@ -512,21 +508,25 @@ NSString *const GBASettingsDropboxStatusChangedNotification = @"GBASettingsDropb
     }
     else if (indexPath.row == 1)
     {
-        username = @"pau1thor";
+        username = @"kajinka13";
     }
     else if (indexPath.row == 2)
     {
-        username = @"alyssasurowiec";
+        username = @"pau1thor";
     }
     else if (indexPath.row == 3)
     {
-        username = @"rakashazi";
+        username = @"alyssasurowiec";
     }
     else if (indexPath.row == 4)
     {
-        username = @"zodttd";
+        username = @"rakashazi";
     }
     else if (indexPath.row == 5)
+    {
+        username = @"zodttd";
+    }
+    else if (indexPath.row == 6)
     {
         username = @"mrjuanfernandez";
     }
@@ -609,7 +609,7 @@ NSString *const GBASettingsDropboxStatusChangedNotification = @"GBASettingsDropb
 }
 
 
-- (NSUInteger)navigationControllerSupportedInterfaceOrientations:(UINavigationController *)navigationController
+- (UIInterfaceOrientationMask)navigationControllerSupportedInterfaceOrientations:(UINavigationController *)navigationController
 {
     return [[navigationController topViewController] supportedInterfaceOrientations];
 }

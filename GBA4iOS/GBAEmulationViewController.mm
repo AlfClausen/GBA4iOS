@@ -94,9 +94,14 @@ static GBAEmulationViewController *_emulationViewController;
 @property (assign, nonatomic) BOOL blurringContents;
 @property (strong, nonatomic) UIImageView *sustainButtonBlurredContentsImageView;
 
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *screenLeftLayoutConstraint;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *screenRightLayoutConstraint;
+
 @end
 
-@implementation GBAEmulationViewController
+@implementation GBAEmulationViewController {
+    BOOL isFullScreen;
+}
 
 #pragma mark - UIViewController subclass
 
@@ -149,6 +154,8 @@ static GBAEmulationViewController *_emulationViewController;
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(controllerDidConnect:) name:GCControllerDidConnectNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(controllerDidDisconnect:) name:GCControllerDidDisconnectNotification object:nil];
+    
+    isFullScreen = YES;
     
     self.view.clipsToBounds = NO;
     
@@ -280,6 +287,7 @@ static GBAEmulationViewController *_emulationViewController;
 - (void)showSplashScreen
 {
     CGRect bounds = [[UIScreen mainScreen] bounds];
+    UIInterfaceOrientation o = [[UIApplication sharedApplication] statusBarOrientation];
     
     // iOS 7 doesn't support using Nibs for Launch Screens
     if (![[UIScreen mainScreen] respondsToSelector:@selector(fixedCoordinateSpace)])
@@ -299,7 +307,7 @@ static GBAEmulationViewController *_emulationViewController;
         }
         else
         {
-            if (UIInterfaceOrientationIsPortrait(self.interfaceOrientation))
+            if (UIInterfaceOrientationIsPortrait(o))
             {
                 imageView.image = [UIImage imageNamed:@"Default-Portrait"];
             }
@@ -314,9 +322,9 @@ static GBAEmulationViewController *_emulationViewController;
         
         CGAffineTransform transform = CGAffineTransformIdentity;
         
-        if (UIInterfaceOrientationIsPortrait(self.interfaceOrientation))
+        if (UIInterfaceOrientationIsPortrait(o))
         {
-            if (self.interfaceOrientation == UIInterfaceOrientationPortrait)
+            if (o == UIInterfaceOrientationPortrait)
             {
                 transform = CGAffineTransformMakeRotation(RADIANS(0.0f));
             }
@@ -327,7 +335,7 @@ static GBAEmulationViewController *_emulationViewController;
         }
         else
         {
-            if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft)
+            if (o == UIInterfaceOrientationLandscapeLeft)
             {
                 transform = CGAffineTransformMakeRotation(RADIANS(270.0f));
             }
@@ -905,6 +913,10 @@ static GBAEmulationViewController *_emulationViewController;
                                           NSLocalizedString(@"Cheat Codes", @""),
                                           NSLocalizedString(@"Sustain Button", @""),
                                           NSLocalizedString(@"Event Distribution", @""), nil];
+                
+                if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+                    [self.pausedActionSheet addButtonWithTitle:NSLocalizedString(@"Change Screen", @"")];
+                }
             }
             else
             {
@@ -919,6 +931,10 @@ static GBAEmulationViewController *_emulationViewController;
                                           NSLocalizedString(@"Cheat Codes", @""),
                                           NSLocalizedString(@"Sustain Button", @""),
                                           NSLocalizedString(@"Event Distribution", @""), nil];
+                
+                if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+                    [self.pausedActionSheet addButtonWithTitle:NSLocalizedString(@"Change Screen", @"")];
+                }
             }
         }
         else if (self.usingGyroscope && [[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone && ![UIAlertController class])
@@ -937,6 +953,10 @@ static GBAEmulationViewController *_emulationViewController;
                                           NSLocalizedString(@"Cheat Codes", @""),
                                           NSLocalizedString(@"Sustain Button", @""),
                                           NSLocalizedString(@"Rotate To Device Orientation", @""), nil];
+                
+                if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+                    [self.pausedActionSheet addButtonWithTitle:NSLocalizedString(@"Change Screen", @"")];
+                }
             }
             else
             {
@@ -951,6 +971,10 @@ static GBAEmulationViewController *_emulationViewController;
                                           NSLocalizedString(@"Cheat Codes", @""),
                                           NSLocalizedString(@"Sustain Button", @""),
                                           NSLocalizedString(@"Rotate To Device Orientation", @""), nil];
+                
+                if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+                    [self.pausedActionSheet addButtonWithTitle:NSLocalizedString(@"Change Screen", @"")];
+                }
             }
         }
         else
@@ -966,6 +990,10 @@ static GBAEmulationViewController *_emulationViewController;
                                           NSLocalizedString(@"Load State", @""),
                                           NSLocalizedString(@"Cheat Codes", @""),
                                           NSLocalizedString(@"Sustain Button", @""), nil];
+                
+                if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+                    [self.pausedActionSheet addButtonWithTitle:NSLocalizedString(@"Change Screen", @"")];
+                }
             }
             else
             {
@@ -979,6 +1007,10 @@ static GBAEmulationViewController *_emulationViewController;
                                           NSLocalizedString(@"Load State", @""),
                                           NSLocalizedString(@"Cheat Codes", @""),
                                           NSLocalizedString(@"Sustain Button", @""), nil];
+                
+                if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+                    [self.pausedActionSheet addButtonWithTitle:NSLocalizedString(@"Change Screen", @"")];
+                }
             }
         }
         
@@ -1126,6 +1158,13 @@ static GBAEmulationViewController *_emulationViewController;
                     [self resumeEmulation];
                 }
             }
+            else if (buttonIndex == 7)
+            {
+                isFullScreen = !isFullScreen;
+                
+                [self updateEmulatorScreenFrame];
+                [self resumeEmulation];
+            }
             else
             {                
                 [self resumeEmulation];
@@ -1196,7 +1235,9 @@ static GBAEmulationViewController *_emulationViewController;
         imageView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
         imageView.alpha = 0.0;
         
-        UIImage *image = [self blurredViewImageForInterfaceOrientation:self.interfaceOrientation drawController:NO];
+        UIInterfaceOrientation o = [[UIApplication sharedApplication] statusBarOrientation];
+        
+        UIImage *image = [self blurredViewImageForInterfaceOrientation:o drawController:NO];
         imageView.image = image;
         
         [self.view insertSubview:imageView belowSubview:self.controllerView];
@@ -1265,8 +1306,9 @@ static GBAEmulationViewController *_emulationViewController;
     }];
     
     self.selectingSustainedButton = NO;
+    UIInterfaceOrientation o = [[UIApplication sharedApplication] statusBarOrientation];
     
-    [self updateControllerSkinForInterfaceOrientation:self.interfaceOrientation];
+    [self updateControllerSkinForInterfaceOrientation:o];
     [self updateEmulatorScreenFrame]; // In case user connected/disconnected external controller
     
     [self resumeEmulation];
@@ -1992,7 +2034,9 @@ static GBAEmulationViewController *_emulationViewController;
 
 - (void)viewWillLayoutSubviews
 {
-    if (UIInterfaceOrientationIsPortrait(self.interfaceOrientation))
+    UIInterfaceOrientation o = [[UIApplication sharedApplication] statusBarOrientation];
+    
+    if (UIInterfaceOrientationIsPortrait(o))
     {
         [UIView animateWithDuration:0.4 animations:^{
             if (![[self.view constraints] containsObject:self.portraitBottomLayoutConstraint])
@@ -2128,6 +2172,19 @@ static GBAEmulationViewController *_emulationViewController;
         return;
     }
     
+    UIInterfaceOrientation o = [[UIApplication sharedApplication] statusBarOrientation];
+    
+    if (isFullScreen || UIInterfaceOrientationIsPortrait(o)) {
+        self.screenLeftLayoutConstraint.constant = 0.0;
+        self.screenRightLayoutConstraint.constant = 0.0;
+        
+    } else {
+        self.screenLeftLayoutConstraint.constant = (CGRectGetWidth(self.view.bounds) * 0.2); // reduce screen: 20%
+        self.screenRightLayoutConstraint.constant = (CGRectGetWidth(self.view.bounds) * 0.2); // reduce screen: 20%
+    }
+    
+    [self.screenContainerView layoutIfNeeded];
+    
     if (![self isAirplaying])
     {
         CGRect screenRect = [self.controllerView.controllerSkin frameForMapping:GBAControllerSkinMappingScreen orientation:self.controllerView.orientation controllerDisplaySize:self.view.bounds.size];
@@ -2190,15 +2247,16 @@ static GBAEmulationViewController *_emulationViewController;
 - (void)refreshLayout
 {
     [self updateFilter];
+    UIInterfaceOrientation o = [[UIApplication sharedApplication] statusBarOrientation];
     
-    [self updateControllerSkinForInterfaceOrientation:self.interfaceOrientation];
+    [self updateControllerSkinForInterfaceOrientation:o];
     
     [self.view updateConstraintsIfNeeded];
     [self.view layoutIfNeeded];
     
     if (self.blurringContents)
     {
-        self.blurredContentsImageView.image = [self blurredViewImageForInterfaceOrientation:self.interfaceOrientation drawController:YES];
+        self.blurredContentsImageView.image = [self blurredViewImageForInterfaceOrientation:o drawController:YES];
         self.blurredContentsImageView.frame = CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds));
     }
     
@@ -2348,7 +2406,9 @@ static GBAEmulationViewController *_emulationViewController;
 
 - (void)updateFilter
 {
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone && [[UIScreen mainScreen] scale] < 3.0 && UIInterfaceOrientationIsPortrait(self.interfaceOrientation) && self.rom.type == GBAROMTypeGBA && ![self isAirplaying])
+    UIInterfaceOrientation o = [[UIApplication sharedApplication] statusBarOrientation];
+    
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone && [[UIScreen mainScreen] scale] < 3.0 && UIInterfaceOrientationIsPortrait(o) && self.rom.type == GBAROMTypeGBA && ![self isAirplaying])
     {
         [[GBAEmulatorCore sharedCore] applyEmulationFilter:GBAEmulationFilterLinear];
     }
@@ -2586,9 +2646,10 @@ static GBAEmulationViewController *_emulationViewController;
 - (void)blurWithInitialAlpha:(CGFloat)alpha
 {
     [self.blurredContentsImageView removeFromSuperview];
+    UIInterfaceOrientation o = [[UIApplication sharedApplication] statusBarOrientation];
     
     self.blurredContentsImageView = ({
-        UIImage *blurredImage = [self blurredViewImageForInterfaceOrientation:self.interfaceOrientation drawController:YES];
+        UIImage *blurredImage = [self blurredViewImageForInterfaceOrientation:o drawController:YES];
         UIImageView *imageView = [[UIImageView alloc] initWithImage:blurredImage];
         imageView.clipsToBounds = YES;
         imageView.translatesAutoresizingMaskIntoConstraints = YES;
