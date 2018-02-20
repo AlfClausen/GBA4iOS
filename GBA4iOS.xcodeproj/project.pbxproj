@@ -3098,7 +3098,7 @@
 					"-all_load",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rileytestut.GBA4iOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rileytestut.GBA4iOS11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -3304,7 +3304,7 @@
 					"-all_load",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rileytestut.GBA4iOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rileytestut.GBA4iOS11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
@@ -3637,7 +3637,7 @@
 					"-all_load",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rileytestut.GBA4iOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rileytestut.GBA4iOS11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -3681,7 +3681,7 @@
 					"-all_load",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rileytestut.GBA4iOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rileytestut.GBA4iOS11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
@@ -3847,7 +3847,7 @@
 					"-all_load",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rileytestut.GBA4iOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rileytestut.GBA4iOS11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
